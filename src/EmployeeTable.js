@@ -14,8 +14,7 @@ function EmployeeTable() {
       setEmployees(response.data);
       setTotalPages(Math.ceil(response.data.length / 10));
     } catch (error) {
-      alert("Error fetching data:", error);
-    
+      alert("Failed to fetch data");
     }
   };
 
@@ -67,9 +66,7 @@ function EmployeeTable() {
         </tbody>
       </table>
       <div className="buttona">
-        <button onClick={handlePreviousClick} >
-          Previous
-        </button>
+        <button onClick={handlePreviousClick}>Previous</button>
         <span>
           Page {currentPage} of {totalPages}
         </span>
