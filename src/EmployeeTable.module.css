@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #5FB575 ;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    margin: 4px 2px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  div .buttona{
+  text-align: center;
+  }
